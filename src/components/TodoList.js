@@ -10,7 +10,7 @@ const {title, items} = useContext(TodoContext)
   return (
     <div className="todolist">
       <Header title={title} />
-      <ul className="list-unstyled">
+      <ul >
         {items.map((item, index) =>(
           <TodoItem key={index} data={item} />
         ))}

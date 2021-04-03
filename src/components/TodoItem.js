@@ -21,9 +21,9 @@ function handleDone(id) {
   return (
     <li key={id} className="ui-state-default">
       <div className="checkbox">
-        <label className={checked.includes(text) ? 'label done' : 'label undone'} htmlFor="">
-          <input onChange={({target}) => handleChange({target})} type="checkbox" value={text} />
-          {text}
+        <label className={checked.includes(text) ? 'label done' : 'label undone'} htmlFor="input">
+          <input id="input" onChange={({target}) => handleChange({target})} type="checkbox" value={text} />
+          <p>{text}</p>
         </label>
         <button onClick={() => handleDone(id)} type="button">Done</button>
       </div>
