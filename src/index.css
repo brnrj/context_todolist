@@ -39,3 +39,14 @@ li.ui-state-default:last-child {
 .mark-all-done {
   margin-top: 10px;
 }
+
+.done {
+  text-decoration: line-through;
+}
+
+
+.checkbox {
+  display: flex;
+  justify-content: space-between;
+}
+

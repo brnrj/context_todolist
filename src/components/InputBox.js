@@ -3,7 +3,7 @@ import TodoContext from '../context/TodoContext'
 
 function InputBox() {
   const { value, setValue, setItems, items } = useContext(TodoContext)
-
+  
   function handleChange({target}) {
     setValue(target.value)
   }
